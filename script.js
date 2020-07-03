@@ -68,7 +68,7 @@ function convert_Seconds(s){
 	answer = "Time cannot be Reversed!";     
     }
 	
-    else if(sec.includes('e')){
+    else if(sec.includes('e') || sec[0] == 'e'){
         answer = "Please remove 'e' character!";
     }
 
