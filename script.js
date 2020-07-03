@@ -63,7 +63,14 @@ function convert_Seconds(s){
         else if(sec ==0){  answer+="Now";  }
         else{  answer += sec + " seconds";  }
     }
-
+    
+    else if(sec<0){
+	answer = "Time cannot be Reversed!";     
+    }
+	
+    else if(sec/sec != sec%sec == 0){
+        answer = "Seconds can be in Numbers only";
+    }
     else if(sec<hyear){
         remYear = sec;
 		countYear = parseInt(remYear/year);
