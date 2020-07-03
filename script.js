@@ -67,10 +67,6 @@ function convert_Seconds(s){
     else if(sec<0){
 	answer = "Time cannot be Reversed!";     
     }
-	
-    else if(sec.includes('e') || sec[0] == 'e'){
-        answer = "Please remove 'e' character!";
-    }
 
     else if(sec<hyear){
         remYear = sec;
