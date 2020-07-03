@@ -63,7 +63,7 @@ h1{
 }
 /*For Feilds*/
 
-input[type="text"] {
+input[type="number"] {
   background: rgba(255,255,255,0.1);
   border: none;
   border-radius: 20px;
