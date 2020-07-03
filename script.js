@@ -58,7 +58,7 @@ function convert_Seconds(s){
 	var answer = "", comma = ", ", flag =0;
            
      
-    if(sec<min){
+    if(sec<min && sec>=0){
     	if(sec == 1){  answer += sec + " second";   }
         else if(sec ==0){  answer+="Now";  }
         else{  answer += sec + " seconds";  }
