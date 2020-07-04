@@ -33,7 +33,7 @@ function act(){
                      setTimeout(function(){   
                         removeClass(el , 'loading done');
                        }, 1000);
-                  }, 2000);                   
+                  }, 1500);                   
     }
   
 };
@@ -52,21 +52,26 @@ function getValue(){
 }
 
 function convert_Seconds(s){
-	var sec = s, min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
+	var sec = parseInt(s), min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
 	var remSecond = 0, remMin = s, remHour = 0, remDay=0, remYear=0 ;
 	var countSecond, countMin, countHour, countDay, countYear;
 	var answer = "", comma = ", ", flag =0;
-           
-     
-    if(sec<min && sec>=0){
+ 
+
+    if(sec == ""){
+    	answer = "Please enter Seconds to Convert it";
+    }
+
+    else if(sec<0){
+		answer = "Time cannot be Reversed!";     
+    }
+
+    else if(sec<min && sec>=0){
     	if(sec == 1){  answer += sec + " second";   }
         else if(sec ==0){  answer+="Now";  }
         else{  answer += sec + " seconds";  }
     }
     
-    else if(sec<0){
-	answer = "Time cannot be Reversed!";     
-    }
 
     else if(sec<hyear){
         remYear = sec;
