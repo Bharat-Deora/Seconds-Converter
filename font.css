@@ -1,0 +1,31 @@
+@font-face{
+	font-family:'Regularme';
+	src: url("/assets/fonts/Regular.ttf") format("truetype")}
+
+@font-face{
+	font-family:'Thinme';
+	src: url("/assets/fonts/Thin.ttf") format("truetype")}
+
+@font-face{
+	font-family:'Boldme';
+	src: url("/assets/fonts/Bold.ttf") format("truetype")}
+
+@font-face{
+	font-family:'UltraBoldme';
+	src: url("/assets/fonts/UltraBold.ttf") format("truetype")}
+
+@font-face{
+	font-family:'Regularime';
+	src: url("/assets/fonts/Regulari.ttf") format("truetype")}
+
+@font-face{
+	font-family:'Heavyme';
+	src: url("/assets/fonts/Heavy.ttf") format("truetype")}
+
+@font-face{
+	font-family:'SemiBoldme';
+	src: url("/assets/fonts/SemiBold.ttf") format("truetype")}	
+
+@font-face{
+	font-family:'Boldime';
+	src: url("/assets/fonts/Boldi.ttf") format("truetype")}
