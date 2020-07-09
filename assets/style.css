@@ -1,0 +1,82 @@
+html, body{
+	box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+	text-align: center;
+	height: 100%;
+	margin: 0;
+    font-family: 'Regularme';
+    color: #384047;
+    background-image: url("images/large.png");
+    margin:0;
+    padding:0;
+    background-position: 50% 50%;
+    background-color: #eeeeee;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+#title{
+	font-family: 'Lightme';
+}
+
+/*For Form*/
+.title{
+	margin-bottom: 25px;
+}
+h1{
+	font-size: 2.5em;
+}
+.main{
+	display: inline-block;
+	position: relative;
+	top:10%;
+	font-size: 1em;
+	text-align: center;
+  margin: 0;
+}
+
+.container{
+	width: 420px;
+	display: inline-block;
+	margin:10px;
+}
+
+#parent{
+	display: inline-block;
+}
+.text{
+	font-family: 'Regularme';
+	font-weight: 600;
+	font-size: 1.2em;
+}
+.answer{
+	margin-top: 25px;
+	min-width: 250px;
+	width: auto;
+	font-family: 'Lightme';
+	padding:0 25px;
+	border: solid 1px #5628EE;
+	border-radius : 30px;
+	box-shadow: 0 4px 20px rgba(86, 40, 238, 0.15);
+	font-weight: 700;
+}
+/*For Feilds*/
+
+input[type="number"] {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-family: 'Regularme';
+  border-radius: 20px;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 8px;
+  width: 50%;
+  background-color: #e8eeef;
+  /*color: #8a97a0;*/
+  box-shadow: 0 4px 20px rgba(86, 40, 238, 0.15);
+  margin-bottom: 5px;
+}
