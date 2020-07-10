@@ -83,6 +83,3 @@ function convert_Seconds(s){
 
     child.innerHTML = answer;
 };
-
-		 
- 

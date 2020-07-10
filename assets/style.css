@@ -1,9 +1,11 @@
-html, body{
+html{
+	height: 100% !important;
+}
+body{
+	height: 100% !important;
 	box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
 	text-align: center;
-	height: 100%;
-	margin: 0;
     font-family: 'Regularme';
     color: #384047;
     background-image: url("images/large.png");
@@ -17,30 +19,43 @@ html, body{
   box-sizing: border-box;
 }
 
-#title{
-	font-family: 'Lightme';
-}
-
 /*For Form*/
 .title{
+	margin: 0;
+	margin-top: 13vh;
+	font-family: 'Lightme';
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 	margin-bottom: 25px;
+	width: auto;
 }
 h1{
 	font-size: 2.5em;
 }
-.main{
-	display: inline-block;
-	position: relative;
-	top:10%;
-	font-size: 1em;
-	text-align: center;
-  margin: 0;
-}
 
 .container{
-	width: 420px;
+	position: relative;
+	display: inline-block;
+	font-size: 1em;
+	text-align: center;
+    margin: 0;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.subcontainer{
+	width: auto;
 	display: inline-block;
 	margin:10px;
+    padding-right:15px;
+	padding-left:15px;
+	margin-right:auto;
+	margin-left:auto
 }
 
 #parent{
@@ -52,6 +67,7 @@ h1{
 	font-size: 1.2em;
 }
 .answer{
+	margin: 0;
 	margin-top: 25px;
 	min-width: 250px;
 	width: auto;
@@ -60,9 +76,15 @@ h1{
 	border: solid 1px #5628EE;
 	border-radius : 30px;
 	box-shadow: 0 4px 20px rgba(86, 40, 238, 0.15);
-	font-weight: 700;
+	font-weight: 600;
+	margin-bottom: 10%;
 }
 /*For Feilds*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 input[type="number"] {
   background: rgba(255,255,255,0.1);
@@ -71,12 +93,31 @@ input[type="number"] {
   border-radius: 20px;
   font-size: 16px;
   height: auto;
+  width: 150px;
   margin: 0;
   outline: 0;
+  text-align:center;
   padding: 8px;
-  width: 50%;
   background-color: #e8eeef;
   /*color: #8a97a0;*/
   box-shadow: 0 4px 20px rgba(86, 40, 238, 0.15);
   margin-bottom: 5px;
 }
+
+@media (min-width:368px){
+   .container{
+	
+   }
+	
+	}
+@media (min-width:492px){
+       .container{
+	
+   }
+	
+	}
+@media (min-width:500px){
+   .container{
+	
+   }
+	}
