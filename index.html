@@ -14,13 +14,16 @@
 	
 </head>
 <body>
+  <div class="main" id="whole">
+  	<div></div>
 	<div class="container">
 	  <div class="title">
 	     <h1 id="Seconds_Converter">Seconds Converter </h1>
-	  </div>	
+	  </div>
+	  <br>	
 	  <div class="subcontainer">
 		<p class = "text">Enter Seconds :&nbsp&nbsp
-			<input type="number" placeholder="Seconds" id="sec">
+			<input type="number" placeholder="Seconds" onclick="hide()" id="sec">
 	    </p>
 	    <div class="submitButton">
  			<a class="load" id="load" onclick="load()">
@@ -60,6 +63,10 @@
         <p id="answer">Converts Seconds Into Human Readable Language</p>
 	  </div>
     </div>
+    <div></div>
+    <a id="banner">  </a>
+  </div> 
+    
 	<script type="text/javascript" src="assets/js/converter.js"></script>
 	<!-- Google Analytics -->
 	<script type="text/javascript">
