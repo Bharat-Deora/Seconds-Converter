@@ -1,9 +1,10 @@
 var swidth = screen.width;
-
+var c = 0;
 function hide(){
   if (swidth <= 500) {
   	if(banner){
        removeElement('banner');
+       console.log(c);
   	}
    } 
 }
@@ -29,10 +30,11 @@ function getValue(){
 	var  sec = document.getElementById("sec").value;
 
 	if (swidth <= 500) {
-	  if(banner){ console.log(banner); }
-	  else{
-     	addElement('whole' , 'a', 'banner');
+	  if(banner && c == 0){ 
+	    addElement('whole' , 'a', 'banner');
+	    c = 1;
      }
+     console.log(c);
     }
 
 	var min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
