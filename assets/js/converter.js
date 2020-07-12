@@ -4,8 +4,9 @@ var child = document.getElementById("answer");
 function getValue(){
 	var  sec = document.getElementById("sec").value;
 	if (swidth <= 500) {
-	  if(!banner){	
-       addElement('whole' , 'a', 'banner');
+	  if(banner){     }
+     else{
+     	addElement('whole' , 'a', 'banner');
      }
     }
 	convert_Seconds(sec);
@@ -96,7 +97,7 @@ var banner = document.getElementById("banner");
 function hide(){
   if (swidth <= 500) {
   	if(banner){
-       document.getElementById("banner").remove();
+       banner.remove();
   	}
    } 
 }
