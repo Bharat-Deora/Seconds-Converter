@@ -3,10 +3,14 @@ var child = document.getElementById("answer");
 		
 function getValue(){
 	var  sec = document.getElementById("sec").value;
+	if (swidth <= 500) {
+      addElement('whole' , 'a', 'banner');
+    }
 	convert_Seconds(sec);
 }
 
 function convert_Seconds(s){
+
 	var sec = s, min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
 	var remSecond = 0, remMin = s, remHour = 0, remDay=0, remYear=0 ;
 	var countSecond, countMin, countHour, countDay, countYear;
@@ -83,3 +87,21 @@ function convert_Seconds(s){
 
     child.innerHTML = answer;
 };
+
+
+var swidth = screen.width;
+var banner = document.getElementById("banner");
+function hide(){
+  if (swidth <= 500) {
+    document.getElementById("banner").remove();
+   } 
+}
+function addElement(parentId, elementTag, elementId) {
+    // Adds an element to the document
+    var p = document.getElementById(parentId);
+    var newElement = document.createElement(elementTag);
+    newElement.setAttribute('id', elementId);
+    newElement.setAttribute("href", "https://bharat-deora.github.io/Seconds-Converter/" )
+    newElement.innerHTML = "";
+    p.appendChild(newElement);
+}
