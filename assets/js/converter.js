@@ -4,7 +4,9 @@ var child = document.getElementById("answer");
 function getValue(){
 	var  sec = document.getElementById("sec").value;
 	if (swidth <= 500) {
-      addElement('whole' , 'a', 'banner');
+	  if(!banner){	
+       addElement('whole' , 'a', 'banner');
+     }
     }
 	convert_Seconds(sec);
 }
@@ -93,7 +95,9 @@ var swidth = screen.width;
 var banner = document.getElementById("banner");
 function hide(){
   if (swidth <= 500) {
-    document.getElementById("banner").remove();
+  	if(banner){
+       document.getElementById("banner").remove();
+  	}
    } 
 }
 function addElement(parentId, elementTag, elementId) {
