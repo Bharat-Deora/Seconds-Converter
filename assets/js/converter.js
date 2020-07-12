@@ -93,7 +93,7 @@ function convert_Seconds(s){
 
 var swidth = screen.width;
 var banner = document.getElementById("banner");
-console.log(banner, banner.length);
+console.log(banner, !(banner));
 function hide(){
   if (swidth <= 500) {
   	if(banner){
