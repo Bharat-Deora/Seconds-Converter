@@ -95,12 +95,12 @@ var swidth = screen.width;
 var banner = document.getElementById("banner");
 var flag = 0;
 function hide(){
+  flag = 0;
   if (swidth <= 500) {
   	if(banner){
        banner.remove();
        flag =1;
   	}
-  	flag = 0;
    } 
 }
 function addElement(parentId, elementTag, elementId) {
