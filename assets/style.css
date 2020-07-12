@@ -8,7 +8,6 @@ body{
     background-image: url("images/large.png");
     margin:0;
     padding:0;
-    background-position: 50% 50%;
     background-color: #eeeeee;
     content: unset;
 }
