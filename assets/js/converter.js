@@ -4,7 +4,7 @@ var child = document.getElementById("answer");
 function getValue(){
 	var  sec = document.getElementById("sec").value;
 	if (swidth <= 500) {
-	  if(banner.length <= 0){ 
+	  if(!banner){ 
      	addElement('whole' , 'a', 'banner');
      }
     }
