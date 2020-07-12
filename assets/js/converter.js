@@ -1,20 +1,41 @@
-var parent = document.getElementById("parent");
-var child = document.getElementById("answer");
-		
+var swidth = screen.width;
+
+function hide(){
+  if (swidth <= 500) {
+  	if(banner){
+       removeElement('banner');
+  	}
+   } 
+}
+
+
+function addElement(parentId, elementTag, elementId) {
+    var p = document.getElementById(parentId);
+    var newElement = document.createElement(elementTag);
+    newElement.setAttribute('id', elementId);
+    newElement.setAttribute("href", "https://bharat-deora.github.io/Seconds-Converter/" )
+    newElement.innerHTML = "";
+    p.appendChild(newElement);
+}
+
+function removeElement(elementId) {
+    var element = document.getElementById(elementId);
+    element.parentNode.removeChild(element);
+}
+
 function getValue(){
+	var parent = document.getElementById("parent");
+    var child = document.getElementById("answer");
 	var  sec = document.getElementById("sec").value;
+
 	if (swidth <= 500) {
 	  if(banner){ }
 	  else{
      	addElement('whole' , 'a', 'banner');
      }
     }
-	convert_Seconds(sec);
-}
 
-function convert_Seconds(s){
-
-	var sec = s, min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
+	var min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
 	var remSecond = 0, remMin = s, remHour = 0, remDay=0, remYear=0 ;
 	var countSecond, countMin, countHour, countDay, countYear;
 	var answer = "", comma = ", ", flag =0;
@@ -92,23 +113,5 @@ function convert_Seconds(s){
 };
 
 
-var swidth = screen.width;
-var banner = document.getElementById("banner");
-console.log(banner, (banner));
-function hide(){
-  if (swidth <= 500) {
-  	if(banner){
-       banner.remove();
-       console.log(banner);
-  	}
-   } 
-}
-function addElement(parentId, elementTag, elementId) {
-    // Adds an element to the document
-    var p = document.getElementById(parentId);
-    var newElement = document.createElement(elementTag);
-    newElement.setAttribute('id', elementId);
-    newElement.setAttribute("href", "https://bharat-deora.github.io/Seconds-Converter/" )
-    newElement.innerHTML = "";
-    p.appendChild(newElement);
-}
+
+
