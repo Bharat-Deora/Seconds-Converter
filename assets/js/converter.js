@@ -4,6 +4,7 @@ function hide(){
   if (swidth <= 500) {
   	if(banner){
        removeElement('banner');
+       c = 0 ;
        console.log(c);
   	}
    } 
@@ -30,7 +31,7 @@ function getValue(){
 	var  sec = document.getElementById("sec").value;
 
 	if (swidth <= 500) {
-	  if(banner && c == 0){ 
+	  if(c == 0){ 
 	    addElement('whole' , 'a', 'banner');
 	    c = 1;
      }
