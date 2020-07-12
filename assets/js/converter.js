@@ -1,5 +1,5 @@
 var swidth = screen.width;
-var banner = document.getElementById("banner");
+var banner = !!document.getElementById("banner");
 var c = 0;
 function hide(){
   if (swidth <= 500) {
