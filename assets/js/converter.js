@@ -29,7 +29,7 @@ function getValue(){
 	var  sec = document.getElementById("sec").value;
 
 	if (swidth <= 500) {
-	  if(banner){ }
+	  if(banner){ continue; }
 	  else{
      	addElement('whole' , 'a', 'banner');
      }
