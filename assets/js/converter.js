@@ -4,7 +4,7 @@ var child = document.getElementById("answer");
 function getValue(){
 	var  sec = document.getElementById("sec").value;
 	if (swidth <= 500) {
-	  if(!(cbanner)){ 
+	  if(!(banner)){ 
      	addElement('whole' , 'a', 'banner');
      }
     }
@@ -92,12 +92,11 @@ function convert_Seconds(s){
 
 
 var swidth = screen.width;
-var cbanner = !!document.getElementById("banner");
 var banner = document.getElementById("banner");
 console.log(banner, banner.length);
 function hide(){
   if (swidth <= 500) {
-  	if(cbanner){
+  	if(banner){
        banner.remove();
   	}
    } 
