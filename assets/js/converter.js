@@ -99,6 +99,7 @@ function hide(){
   if (swidth <= 500) {
   	if(banner){
        banner.remove();
+       console.log(banner);
   	}
    } 
 }
