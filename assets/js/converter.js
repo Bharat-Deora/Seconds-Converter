@@ -36,7 +36,7 @@ function getValue(){
     }
 
 	var min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
-	var remSecond = 0, remMin = s, remHour = 0, remDay=0, remYear=0 ;
+	var remSecond = 0, remMin = 0, remHour = 0, remDay=0, remYear=0 ;
 	var countSecond, countMin, countHour, countDay, countYear;
 	var answer = "", comma = ", ", flag =0;
  
