@@ -1,11 +1,11 @@
 var swidth = screen.width;
+var banner = document.getElementById("banner");
 var c = 0;
 function hide(){
   if (swidth <= 500) {
   	if(banner){
        removeElement('banner');
-       c = 0 ;
-       console.log(c);
+       c =0;
   	}
    } 
 }
@@ -33,7 +33,7 @@ function getValue(){
 	if (swidth <= 500) {
 	  if(c == 0){ 
 	    addElement('whole' , 'a', 'banner');
-	    c = 1;
+	    c =1;
      }
      console.log(c);
     }
