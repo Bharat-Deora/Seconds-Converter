@@ -1,11 +1,10 @@
 var swidth = screen.width;
-var banner = !!document.getElementById("banner");
-var c = 0;
+
 function hide(){
+  var ban = document.getElementById("banner");
   if (swidth <= 500) {
-  	if(banner){
-       removeElement('banner');
-       c =0;
+  	if(ban){
+       ban.remove();
   	}
    } 
 }
@@ -16,7 +15,7 @@ function addElement(parentId, elementTag, elementId) {
     var newElement = document.createElement(elementTag);
     newElement.setAttribute('id', elementId);
     newElement.setAttribute("href", "https://bharat-deora.github.io/Seconds-Converter/" )
-    newElement.innerHTML = "";
+    newElement.innerHTML = '';
     p.appendChild(newElement);
 }
 
@@ -31,11 +30,10 @@ function getValue(){
 	var  sec = document.getElementById("sec").value;
 
 	if (swidth <= 500) {
-	  if(c == 0){ 
+      var ban = document.getElementById("banner");
+      if(!ban){
 	    addElement('whole' , 'a', 'banner');
-	    c =1;
-     }
-     console.log(c);
+       }
     }
 
 	var min = 60, hour= 3600, day = 24*3600, year = 31536000, hyear = year *100;
