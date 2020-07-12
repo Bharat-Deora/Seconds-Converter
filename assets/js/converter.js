@@ -96,7 +96,7 @@ var banner = !!document.getElementById("banner");
 console.log(banner, banner.length);
 function hide(){
   if (swidth <= 500) {
-  	if(banner.length > 0){
+  	if(banner){
        banner.remove();
   	}
    } 
